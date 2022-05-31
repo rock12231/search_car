@@ -12,7 +12,7 @@ import numpy as np
 
 # Read data from csv file
 df = pd.read_csv("selectCar/data/processed_cardekho.csv")
-model = pickle.load(open('selectCar/data/deepmodel2.sav', "rb"))
+model = pickle.load(open('selectCar/data/deepmodel.sav', "rb"))
 
 
 # Current car details
