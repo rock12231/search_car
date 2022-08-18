@@ -33,8 +33,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['https://cardekhoo.herokuapp.com/',
                  'http://cardekhoo.herokuapp.com/',
                  'cardekhoo.herokuapp.com',
-                 '127.0.0.1',
-                 '*']
+                #  '127.0.0.1',
+                #  '*'
+                ]
 
 
 # Application definition
