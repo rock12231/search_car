@@ -30,9 +30,9 @@ DEBUG = True
 # ALLOWED_HOSTS = []
 
 
-ALLOWED_HOSTS = ['https://avi-test-pro.herokuapp.com',
-                 'https://avi-test-pro.herokuapp.com/',
-                 'avi-test-pro.herokuapp.com',
+ALLOWED_HOSTS = ['https://cardekhoo.herokuapp.com/',
+                 'http://cardekhoo.herokuapp.com/',
+                 'cardekhoo.herokuapp.com',
                  '127.0.0.1',
                  '*']
 
