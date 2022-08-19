@@ -1,6 +1,6 @@
 # from ast import Str
 # from asyncio.windows_events import NULL
-from copyreg import pickle
+# from copyreg import pickle
 from django.shortcuts import render
 from django.views import View
 import pandas as pd
@@ -12,8 +12,7 @@ import numpy as np
 
 # Read data from csv file
 df = pd.read_csv("selectCar/data/processed_cardekho.csv")
-# model = pickle.load(open('selectCar/data/deepmodel2.sav', "rb"))
-
+model = pickle.load(open('selectCar/data/deepmodel2.sav', "rb"))
 
 # Current car details
 car: dict = {
@@ -183,7 +182,7 @@ class Prediction(View):
         l=np.array([UserInput])
         l.reshape(-1, 1)
 
-        result = {} #model.predict(l)
+        result = model.predict(l)
         print(type(result),"Result.......................")
         return render(request, 'selectCar/prediction.html',{'result':result})
   
